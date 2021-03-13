@@ -1,0 +1,2559 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontothese"
+     xml:base="http://www.semanticweb.org/ontothese"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ontothese="http://www.semanticweb.org/ontothese#"
+     xmlns:ontothese1="http://www.tuwien.ac.at/ontothese.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontothese"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#ACommeService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#ACommeService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#AService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#AService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Attribuer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#Attribuer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Coordinate-With -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#Coordinate-With"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Coordonner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#Coordonner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Coordonner-Avec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#Coordonner-Avec">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#DeleguerA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#DeleguerA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#affecter-A -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#affecter-A">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontothese#est-Affecter-A"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#est-Affecter-A -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontothese#est-Affecter-A"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AAcomme -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AAcomme">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ACible -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ACible">
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AConcerne -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AConcerne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerne"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Activite"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerner"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AConcerner -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AConcerner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerner"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AEffectuer -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AEffectuer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Effectuer"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AEntree -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AEntree">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Entree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AEstAssignee -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AEstAssignee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AEstCible -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AEstCible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AEstSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AEstSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AEstSujet -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AEstSujet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerner"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AInitierPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AInitierPar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AOccurence -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AOccurence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#APeutEffectuer -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#APeutEffectuer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#APossede -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#APossede">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#APouvoir -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#APouvoir">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ASortie -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ASortie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Sortie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ASource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ASource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ASuit -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ASuit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#AcitiviteNorme -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#AcitiviteNorme">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeActivite"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Activite"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Norme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Acomme -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Acomme">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ActiviteTypeRessource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ActiviteTypeRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#AcitiviteNorme"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeTypeRessource"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Cible -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Cible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Concerne -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Concerne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerner"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Activite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Concerner -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Concerner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerner"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Effectuer -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Effectuer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Entree -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Entree">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#EstAssignee -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#EstAssignee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#EstCible -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#EstCible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#EstSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#EstSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#EstSujet -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#EstSujet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Concerner"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#InterventionIsParOfConversation -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#InterventionIsParOfConversation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#IntierPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#IntierPar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NormeActivite -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeActivite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Norme"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Activite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleRessource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RessourceNormeExceptionnelle"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleTache -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleTache">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TacheNormeExceptionnelle"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NormeTypeRessource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeTypeRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessourceNorme"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Norme"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Occurence -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Occurence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#PeutEffectuer -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#PeutEffectuer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Possede -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Possede">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ProfilisParOFprotcole -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ProfilisParOFprotcole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#RessourceNormeExceptionnelle -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#RessourceNormeExceptionnelle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#RessourceTache -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#RessourceTache">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#RessourceNormeExceptionnelle"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleTache"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Sortie -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Sortie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Source -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Source">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Suit -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Suit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TacheNormeExceptionnelle -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TacheNormeExceptionnelle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TacheRessource -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TacheRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#TacheNormeExceptionnelle"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleRessource"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeIntervIsParOfProtocole -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeIntervIsParOfProtocole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeRessourceActivite -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeRessourceActivite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeRessourceNorme"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeActivite"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeRessourceNorme -->
+
+    <owl:ObjectProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeRessourceNorme">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Norme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ActionTypInter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ActionTypInter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#DescrProfil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#DescrProfil">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#DescrProtocole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#DescrProtocole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#DispoRessource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#DispoRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#ExpLogiCon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#ExpLogiCon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#IdConversation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#IdConversation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#IdIntervention -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#IdIntervention">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#IdProfil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#IdProfil">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#IdProtocole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#IdProtocole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Interdiction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Interdiction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Obligation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NomCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NomCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NomConversation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NomConversation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NomParametre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NomParametre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NomTypInter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#NomTypInter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEffectuer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Obligation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Obligation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Permission -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#Permission">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Norme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeParametre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeParametre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeProtocole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeProtocole">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#IntierPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeRelaSoci -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeRelaSoci">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeRessource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypetypRessource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypetypRessource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Activite -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Activite"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Controle -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Controle">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Coordination -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Coordination">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Groupe -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Groupe">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Humain -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Humain">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Logiciel -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Logiciel">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Machine -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Machine">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Negociation -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Negociation"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Norme -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Norme"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Pouvoir -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Pouvoir">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Recherche -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Recherche"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#RelationSociale -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#RelationSociale">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Ressource -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Ressource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ACible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#ASource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Role -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Role">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Substitution -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Substitution">
+        <rdfs:subClassOf rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Tache -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#TypeRessource -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#TypeRessource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tuwien.ac.at/ontothese.owl#Vote -->
+
+    <owl:Class rdf:about="http://www.tuwien.ac.at/ontothese.owl#Vote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Bernard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Bernard">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Humain"/>
+        <ontothese:ACommeService rdf:resource="http://www.semanticweb.org/ontothese#Service2"/>
+        <ontothese1:DispoRessource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontothese1:DispoRessource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#ChefPolice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#ChefPolice">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Role"/>
+        <ontothese1:AEstAssignee rdf:resource="http://www.semanticweb.org/ontothese#Bernard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#ChefPompier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#ChefPompier">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Role"/>
+        <ontothese1:AEstAssignee rdf:resource="http://www.semanticweb.org/ontothese#Sebastien"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#ChefSAMU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#ChefSAMU">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Role"/>
+        <ontothese1:AEstAssignee rdf:resource="http://www.semanticweb.org/ontothese#Marc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Coordination1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Coordination1">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Coordination"/>
+        <ontothese1:ASource rdf:resource="http://www.semanticweb.org/ontothese#Prefet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Coordination2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Coordination2">
+        <ontothese1:ASource rdf:resource="http://www.semanticweb.org/ontothese#ChefPolice"/>
+        <ontothese1:ASource rdf:resource="http://www.semanticweb.org/ontothese#ChefPompier"/>
+        <ontothese1:ASource rdf:resource="http://www.semanticweb.org/ontothese#ChefSAMU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Jean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Jean">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Humain"/>
+        <ontothese:ACommeService rdf:resource="http://www.semanticweb.org/ontothese#Service5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Marc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Marc">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Humain"/>
+        <ontothese:ACommeService rdf:resource="http://www.semanticweb.org/ontothese#Service1"/>
+        <ontothese1:DispoRessource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontothese1:DispoRessource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Ministre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Ministre">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Role"/>
+        <ontothese:AService rdf:resource="http://www.semanticweb.org/ontothese#Service1"/>
+        <ontothese:AService rdf:resource="http://www.semanticweb.org/ontothese#Service2"/>
+        <ontothese:AService rdf:resource="http://www.semanticweb.org/ontothese#Service3"/>
+        <ontothese:AService rdf:resource="http://www.semanticweb.org/ontothese#Service4"/>
+        <ontothese1:ACible rdf:resource="http://www.semanticweb.org/ontothese#Coordination1"/>
+        <ontothese1:AEstAssignee rdf:resource="http://www.semanticweb.org/ontothese#Jean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Norme1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Norme1">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Paul">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Humain"/>
+        <ontothese:ACommeService rdf:resource="http://www.semanticweb.org/ontothese#Service5"/>
+        <ontothese1:DispoRessource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontothese1:DispoRessource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Prefet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Prefet">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Role"/>
+        <ontothese1:ACible rdf:resource="http://www.semanticweb.org/ontothese#Coordination2"/>
+        <ontothese1:AEstAssignee rdf:resource="http://www.semanticweb.org/ontothese#Paul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Sebastien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Sebastien">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Humain"/>
+        <ontothese:ACommeService rdf:resource="http://www.semanticweb.org/ontothese#Service3"/>
+        <ontothese:ACommeService rdf:resource="http://www.semanticweb.org/ontothese#Service4"/>
+        <ontothese1:DispoRessource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontothese1:DispoRessource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Service1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Service1">
+        <ontothese:affecter-A rdf:resource="http://www.semanticweb.org/ontothese#Prefet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Service2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Service2">
+        <ontothese:affecter-A rdf:resource="http://www.semanticweb.org/ontothese#Prefet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Service3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Service3">
+        <ontothese:affecter-A rdf:resource="http://www.semanticweb.org/ontothese#Prefet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Service4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Service4">
+        <ontothese:affecter-A rdf:resource="http://www.semanticweb.org/ontothese#Prefet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#Service5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#Service5">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Tache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontothese#pouvoir1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontothese#pouvoir1">
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Pouvoir"/>
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+        <rdf:type rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#RelationSociale"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Cible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#EstSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TypeRessource"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.tuwien.ac.at/ontothese.owl#Ressource"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#Controle"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#Coordination"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#Pouvoir"/>
+            <rdf:Description rdf:about="http://www.tuwien.ac.at/ontothese.owl#Substitution"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Bernard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Jean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Marc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Paul"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Sebastien"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Coordination1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Coordination2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Ministre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#Prefet"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#r1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#r2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontothese#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordonner pour une tÃ¢che</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#Coordinate-With"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#ACommeService"/>
+                                <swrl:argument1 rdf:resource="#x"/>
+                                <swrl:argument2 rdf:resource="#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#ACommeService"/>
+                                        <swrl:argument1 rdf:resource="#y"/>
+                                        <swrl:argument2 rdf:resource="#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#DispoRessource"/>
+                                                <swrl:argument1 rdf:resource="#y"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="#x"/>
+                                                        <swrl:argument2 rdf:resource="#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#Coordonner"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#AService"/>
+                        <swrl:argument1 rdf:resource="#r"/>
+                        <swrl:argument2 rdf:resource="#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstAssignee"/>
+                                <swrl:argument1 rdf:resource="#r"/>
+                                <swrl:argument2 rdf:resource="#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#AService"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation de coordination entre individus</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#Coordonner-Avec"/>
+                        <swrl:argument1 rdf:resource="#r1"/>
+                        <swrl:argument2 rdf:resource="#r2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstAssignee"/>
+                                <swrl:argument1 rdf:resource="#r1"/>
+                                <swrl:argument2 rdf:resource="#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstAssignee"/>
+                                        <swrl:argument1 rdf:resource="#r2"/>
+                                        <swrl:argument2 rdf:resource="#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                <swrl:argument1 rdf:resource="#x"/>
+                                                <swrl:argument2 rdf:resource="#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#DispoRessource"/>
+                                                        <swrl:argument1 rdf:resource="#y"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#Coordinate-With"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#APouvoir"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ontothese#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ontothese#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#DeleguerA"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ontothese#z"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ontothese#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ontothese#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ontothese#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#DispoRessource"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ontothese#y"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#APouvoir"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ontothese#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ontothese#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#affecter-A"/>
+                        <swrl:argument1 rdf:resource="#s"/>
+                        <swrl:argument2 rdf:resource="#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#AEstAssignee"/>
+                                <swrl:argument1 rdf:resource="#r"/>
+                                <swrl:argument2 rdf:resource="#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontothese#ACommeService"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleTache"/>
+                        <swrl:argument1 rdf:resource="#n"/>
+                        <swrl:argument2 rdf:resource="#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#TacheRessource"/>
+                                <swrl:argument1 rdf:resource="#t"/>
+                                <swrl:argument2 rdf:resource="#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tuwien.ac.at/ontothese.owl#NormeExceptionnelleRessource"/>
+                        <swrl:argument1 rdf:resource="#n"/>
+                        <swrl:argument2 rdf:resource="#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
